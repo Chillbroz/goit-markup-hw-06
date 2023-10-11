@@ -4,10 +4,23 @@
   box-sizing: border-box;
 }
 
+/* gpt variant
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+} */
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #fff;
   color: #434455;
+  /* gpt variant
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; */
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -341,8 +354,8 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 }
 
 .port {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .port-title {
@@ -354,15 +367,16 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  row-gap: 48px;
-  column-gap: 24px;
-  flex-basis: calc((100% - 48px) / 3);
+  gap: 48px;
+  max-width: 288px;
+  margin: 0 auto;
 }
 
 .port-card {
   position: relative;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  max-width: 288px;
 }
 
 .port-card:hover,
@@ -398,6 +412,21 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   border: 1px solid #E7E9FC;
   border-top: none;
   padding: 32px 16px;
+}
+
+.port-list-title {
+  color: v#2E2F42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  padding-bottom: 8px;
+}
+
+.port-text {
+  color: #434455;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .ft-section {
@@ -794,6 +823,16 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   .team-mates {
     width: calc((100% - 24px) / 2);
   }
+
+  .list-port {
+    gap: 24px;
+    row-gap: 72px;
+    max-width: 736px;
+  }
+
+  .port-card {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -845,6 +884,17 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 
   .team-mates {
     width: calc((100% - 3*24px) / 4);
+  }
+
+  .list-port {
+    gap: 24px;
+    row-gap: 48px;
+    max-width: 1128px;
+  }
+
+  .port-card {
+    width: calc((100% - 2*24px) / 3);
+    max-width: 360px;
   }
 }
 
