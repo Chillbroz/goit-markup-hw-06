@@ -4,23 +4,10 @@
   box-sizing: border-box;
 }
 
-/* gpt variant
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-} */
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: #fff;
   color: #434455;
-  /* gpt variant
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden; */
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -150,25 +137,27 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 
 .main-sect {
   background: #2e2f42;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/back.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/back-mob@2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  max-width: 1440px;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  max-width: 320px;
+  padding-top: 72px;
+  padding-bottom: 72px; 
   margin: 0 auto;
 }
 
 .main-sect-title {
   color: #fff;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  max-width: 496px;
+  text-transform: capitalize;
+  max-width: 169px;
   margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .main-sect-button {
@@ -183,10 +172,7 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding: 16px 32px;
-  margin-top: 48px;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
+  margin: 0 auto;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -247,7 +233,6 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   margin-bottom: 8px;
   display: none;
 }
-
 
 .list-title {
   color: #2e2f42;
@@ -431,17 +416,13 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 
 .ft-section {
   background:#2E2F42;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.ft-cont {
-  display: flex;
-  align-items: baseline;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .ft-info {
-  margin-right: 120px;
+  text-align: center;
+  margin-bottom: 72px;
 }
 
 .ft-logo {
@@ -466,19 +447,16 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 }
 
 .ft-text {
+  text-align: left;
   color: #F4F4FD;
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
 }
 
-.ft-media {
-  margin-right: 80px;
-}
-
 .ft-soc-title {
+  text-align: center;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #FFF;
@@ -491,6 +469,7 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   margin-top: 8px;
   gap: 16px;
   flex-basis: calc((100% - 16*3)/4);
+  margin-bottom: 72px;
 }
 
 .soc-item {
@@ -518,25 +497,36 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   fill: #f4f4fd;
 }
 
-/* .ft-sub {
-  
-} */
+.ft-sub-title {
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #FFF;
+  margin-bottom: 16px;
+}
 
 .ft-sub-form {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  justify-content: center;
+  gap: 16px;
+}
+
+.sub-label {
+  width: 100%;
 }
 
 .sub-email {
-  min-width: 264px;
+  width: 100%;
   height: 40px;
   color: #FFFFFF;
   background-color: transparent;
   padding-left: 16px;
   border-radius: 4px;
   border: 1px solid #ffff;
+  opacity: 0.3;
   outline: transparent;
   font-size: 12px;
   line-height: 1.5;
@@ -801,6 +791,22 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     max-width: 768px;
   }
 
+  .main-sect {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/back-tab@2.jpg);
+    max-width: 768px;
+    padding-top: 112px;
+    padding-bottom: 112px; 
+    margin: 0 auto;
+  }
+  
+  .main-sect-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
+
   .list-two {
     gap: 24px;
     row-gap: 72px;
@@ -833,6 +839,41 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   .port-card {
     width: calc((100% - 24px) / 2);
   }
+
+  .ft-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 108px;
+    padding-right: 108px;
+    column-gap: 24px;
+  }
+
+  .ft-info {
+    text-align: left;
+  }
+
+  .ft-soc-title {
+    text-align: left;
+  }
+
+  .ft-soc-list {
+    margin-bottom: 0;
+  }
+
+  .ft-sub-title {
+    text-align: left;
+  }
+
+  .ft-sub-form {
+    flex-wrap: nowrap;
+    justify-content: left;
+    gap: 24px;
+  }
+
+  .sub-email {
+    width: 264px;
+}
 }
 
 @media screen and (min-width: 1158px) {
@@ -842,13 +883,21 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     padding-right: 15px;
   }
 
+  .main-sect {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/back-pc@2.jpg);
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px; 
+    margin: 0 auto;
+  }
+  
+  .main-sect-title {
+    margin-bottom: 48px;
+  }
+
   .sect-two {
     padding-top: 120px;
     padding-bottom: 120px;
-  }
-
-  .list-two {
-    gap: 24px;
   }
 
   .list-two-item {
@@ -860,7 +909,6 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   }
 
   .list-title {
-    text-align: left;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -879,7 +927,6 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 
   .list-team {
     max-width: 1128px;
-    gap: 24px;
   }
 
   .team-mates {
@@ -887,7 +934,6 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   }
 
   .list-port {
-    gap: 24px;
     row-gap: 48px;
     max-width: 1128px;
   }
@@ -895,6 +941,29 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   .port-card {
     width: calc((100% - 2*24px) / 3);
     max-width: 360px;
+  }
+
+  .ft-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .ft-cont {
+    flex-wrap: nowrap;
+    column-gap: 0;
+  }
+
+  .ft-info {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+
+  .ft-media {
+    margin-right: 80px;
+  }
+
+  .sub-email {
+    opacity: 1;
   }
 }
 
