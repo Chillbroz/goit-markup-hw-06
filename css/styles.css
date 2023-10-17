@@ -163,7 +163,7 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   padding-top: 72px;
   padding-bottom: 40px;
   padding-left: 16px;
-  z-index: 1;
+  z-index: 10;
   overflow: auto;
   opacity: 0;
   visibility: hidden;
@@ -712,13 +712,9 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   background-color: rgba(46, 47, 66, 0.40);
   visibility: hidden;
 	opacity: 0;
+  pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
   visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.is-open {
-  visibility: visible;
-  opacity: 1;
 }
 
 .modal-cont {
@@ -726,8 +722,6 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* min-width: 408px;
-  min-height: 584px; */
   width: 288px;
   border-radius: 4px;
   background-color: #FCFCFC;
@@ -919,6 +913,12 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 .form-btn:hover,
 .form-btn:focus {
   background-color:#404BBF;
+}
+
+.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 @media screen and (min-width: 768px) {
